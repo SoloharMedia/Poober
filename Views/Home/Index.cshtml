@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="full-screen-container">
+    <div id="video-background-container">
+        <div class="background-cover"></div>
+    </div>
+    <form>
+        <div id="main-quick-link-container">
+            <a class="main-quick-link" id="pooper-quick-link">
+                <p class="quick-link-text-small">Become</p>
+                <p class="quick-link-text-small">a</p>
+                <p class="quick-link-text-big">POOPER</p>
+                <div class="quick-link-left-background"></div>
+                <div class="quick-link-right-background"></div>
+            </a>
+            <a class="main-quick-link" id="scooper-quick-link">
+                <p class="quick-link-text-small">Become</p>
+                <p class="quick-link-text-small">a</p>
+                <p class="quick-link-text-big">SCOOPER</p>
+                <div class="quick-link-left-background"></div>
+                <div class="quick-link-right-background"></div>
+            </a>
+        </div>
+        <div id="sign-in-wrapper">
+            <div id="sign-in-container">
+                <a asp-controller="Home" asp-action="SignIn" class="sign-link" id="sign-in-link">-SIGN IN-</a>
+                <div class="form-container" id="sign-in-form-container">
+                    <input type="text" name="username-email" class="sign-in-input-text" placeholder="E-mail" autocomplete="new-password">
+                    <input type="password" name="password" class="sign-in-input-text" placeholder="Password" autocomplete="new-password">
+                    <button class="button-form">ENTER</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <a id="button-about">
+        GET TO THE SCOOP
+        <i></i>
+    </a>
+</div>
